@@ -32,6 +32,8 @@ public class App
   		}
   		
       	System.out.println("\nSum of two numbers:"+ c1);
+      	System.out.println("\nSum of two numbers:"+ c1);
+
 		return null;
       	    
   	}
