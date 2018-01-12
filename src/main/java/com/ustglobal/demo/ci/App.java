@@ -27,7 +27,7 @@ public class App
       	c1 =a+Integer.valueOf(b);
   		}
   		catch(Exception e){
-  			return "please enter the valid inputs";
+  			//return "please enter the valid inputs";
   			
   		}
   		
