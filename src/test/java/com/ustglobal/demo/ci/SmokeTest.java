@@ -7,26 +7,22 @@ import org.testng.annotations.Test;
 
 public class SmokeTest {
 	
-// check whether sum of 5 and 5 should return 10 	
+// check whether sum of 5 and 5 should returns 10 	
 	@Test
 	public void tc_001() throws IOException{
 			
 		if (App.sumOfTwoNumbersTest(5, 5)==10) {
-
 			Assert.assertTrue(true);
-
 		} else {
 			Assert.assertTrue(false);
-
 		}		
 	}
 	
-	// check whether sum of -5 and 5 should return 0 	
+	// check whether sum of -5 and 5 returns 0 	
 		@Test
 		public void tc_002() throws IOException{
 			
 			if (App.sumOfTwoNumbersTest(-5, 5)==0) {
-
 				Assert.assertTrue(true);
 
 			} else {
@@ -35,7 +31,7 @@ public class SmokeTest {
 			}			
 		}
 	
-		// check whether sum of -5 and -5 should return -10 	
+		// check whether sum of -5 and -5  returns -10 	
 		@Test
 		public void tc_003() throws IOException{
 
@@ -50,7 +46,7 @@ public class SmokeTest {
 
 	}
 		
-		// check whether sum of 99999 and 99999 should return 199998 	
+		// check whether sum of 99999 and 99999 returns 199998 	
 		@Test
 		public void tc_004() throws IOException{
 			
@@ -63,8 +59,7 @@ public class SmokeTest {
 
 			}			
 		}
-	
-		// check whether sum of 5 and a should return the message Please enter the valid inputs 	
+// check whether sum of 5 and "a" returns the message Please enter the valid inputs 	
 				@Test
 				public void tc_005() throws IOException{
 					
@@ -72,10 +67,10 @@ public class SmokeTest {
 
 						Assert.assertTrue(true);
 
-					} else {
+					} 
+					else {
 						Assert.assertTrue(false);
 
 					}					
-				}
-		
+		}
 }
