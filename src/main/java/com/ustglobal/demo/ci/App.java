@@ -23,13 +23,13 @@ public class App
       public static String sumOfTwoNumbersTest(int a, String b) throws IOException{
   		
   		int c1 = 0;
-  	//	try{
+  		try{
       	c1 =a+Integer.valueOf(b);
-  	//	}
-  	//	catch(Exception e){
-  	//		return "please enter the valid inputs";
+  		}
+  		catch(Exception e){
+  			return "please enter the valid inputs";
   			
-  	//	}
+  		}
   		
       	System.out.println("\nSum of two numbers:"+ c1);
 
