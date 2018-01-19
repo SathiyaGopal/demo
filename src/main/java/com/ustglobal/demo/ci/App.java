@@ -23,13 +23,13 @@ public class App
       public static String sumOfTwoNumbersTest(int a, String b) throws IOException{
   		
   		int c1 = 0;
-  	//	try{
+  		try{
       	c1 =a+Integer.valueOf(b);
-  	//	}
-  	//	catch(Exception e){
-  		//	return "please enter the valid inputs";
+  		}
+  		catch(Exception e){
+  			return "please enter the valid inputs";
   			
-  	//	}
+  		}
   		
       	System.out.println("\nSum of two numbers:"+ c1);
 
@@ -43,16 +43,16 @@ public class App
 		int a,b,c = 0;
     	BufferedReader br= new BufferedReader( new InputStreamReader(System.in));
     	System.out.println("Enter the two numbers to add:");
-    	try {
+    //	try {
     	a=Integer.parseInt(br.readLine());
     	b=Integer.parseInt(br.readLine());
     	c = a+b;
-    	System.out.println("\nSum of two numbers:"+ c);
+    //	System.out.println("\nSum of two numbers:"+ c);
 
-    	}
-    	catch(NumberFormatException e) {
-    		System.out.println("Please enter the valid numbers and try again");
-    	}
+   // 	}
+    //	catch(NumberFormatException e) {
+    //		System.out.println("Please enter the valid numbers and try again");
+    //	}
     	    	
 		return String.valueOf(c);
     	    
