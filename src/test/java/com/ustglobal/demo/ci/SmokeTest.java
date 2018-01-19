@@ -69,7 +69,7 @@ public class SmokeTest {
 
 					} 
 					else {
-						Assert.assertTrue(false);
+						Assert.assertTrue(false, "tc_005  is failed \n \n Please enter the valid Numbers and try again");
 
 					}					
 		}

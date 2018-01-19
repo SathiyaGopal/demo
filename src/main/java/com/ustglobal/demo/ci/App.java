@@ -43,10 +43,16 @@ public class App
 		int a,b,c = 0;
     	BufferedReader br= new BufferedReader( new InputStreamReader(System.in));
     	System.out.println("Enter the two numbers to add:");
+    	try {
     	a=Integer.parseInt(br.readLine());
     	b=Integer.parseInt(br.readLine());
     	c = a+b;
     	System.out.println("\nSum of two numbers:"+ c);
+
+    	}
+    	catch(NumberFormatException e) {
+    		System.out.println("Please enter the valid numbers and try again");
+    	}
     	    	
 		return String.valueOf(c);
     	    
